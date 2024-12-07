@@ -1,0 +1,78 @@
+
+
+/* Reset CSS pour assurer un style de base cohérent */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+/* Conteneur toujours centré */
+
+
+/* Carte au centre */
+
+
+.redirect-buttons .button {
+    display: inline-block;
+    background: #ff007a;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px;
+    transition: background 0.3s, transform 0.2s;
+    font-size: 1rem; /* Taille adaptative */
+}
+
+.redirect-buttons .button:hover {
+    background: #e6006e;
+    transform: scale(1.1);
+}
+
+/* Effet néon */
+.neon {
+    border: 2px solid #ff007a;
+    box-shadow: 0 0 20px #ff007a, 0 0 40px #ff007a, 0 0 60px #ff007a;
+    color: #fff;
+}
+
+/* Animation de zoom */
+@keyframes zoomIn {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Responsive pour les très petits écrans */
+@media (max-width: 600px) {
+    .card {
+        padding: 20px;
+    }
+
+    .card h1 {
+        font-size: 1.5rem;
+    }
+
+    .card p {
+        font-size: 1rem;
+    }
+
+    .redirect-buttons .button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+}
